@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <style type="text/css">
+    /*背景图片*/
+    body {
+        font-family: 'Roboto', sans-serif;
+        overflow: hidden;
+    }
+
+    html, body, div, h1, section {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        background: transparent;
+    }
+
+    section {
+        display: block;
+    }
+
+    html, body {
+        height: 100%;
+    }
+
+    .test {
+        color: #fff;
+        font-weight: 700;
+        font-size: 35px;
+    }
+
+    [class * ="-section"] {
+        overflow: hidden;
+    }
+
+    .intro-section {
+        background-image: url(../img/palyboxBg1.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        display: table;
+    }
+    
+        .intro-logo {height: auto; width: auto\9; width:15%;}
+    
+
+    .intro-section:after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background: #00000096;
+        opacity: 0.85;
+        z-index: 1;
+    }
+
+    .intro-content {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        position: relative;
+        z-index: 2
+    }
+
+    .intro-content h1 {
+        font-size: 30px;
+        color: #fff;
+        text-transform: uppercase;
+        text-shadow: 0 0 16px rgba(0, 0, 0, 0.4);
+        margin-bottom: 10px;
+    }
+        .intro-content h2 {
+        font-size: 20px;
+        color: #5e5c5c;
+        text-transform: uppercase;
+        text-shadow: 0 0 16px rgba(0, 0, 0, 0.4);
+        margin-bottom: 10px;
+    }/* Tablet desktop :768px. */
+
+    @media only screen and (min-width: 768px) and(max-width: 991px) {
+        .intro-content h1 {
+            font-size: 15px;
+        }
+
+        .test {
+            color: #fff;
+            font-weight: 700;
+            font-size: 10px;
+        }
+    }/* Large Mobile :480px. */
+
+    @media only screen and (max-width: 767px) {
+        .intro-content h1 {
+            font-size: 15px;
+        }
+
+        .test {
+            color: #fff;
+            font-weight: 700;
+            font-size: 10px;
+        }
+    }/* small mobile :320px. */
+
+    @media only screen and (max-width: 479px) {
+        .intro-content h1 {
+            font-size: 10px;
+        }
+
+        .test {
+            color: #fff;
+            font-weight: 700;
+            font-size: 15px;
+        }
+    }
+    
+    /* Tablet desktop :768px.h2 */
+
+    @media only screen and (min-width: 768px) and(max-width: 991px) {
+        .intro-content h2 {
+            font-size: 20px;
+        }
+
+        .test {
+            color: #5e5c5c;
+            font-weight: 700;
+            font-size: 10px;
+        }
+    }/* Large Mobile :480px. */
+
+    @media only screen and (max-width: 767px) {
+        .intro-content h2 {
+            font-size: 10px;
+        }
+
+        .test {
+            color: #5e5c5c;
+            font-weight: 700;
+            font-size: 5px;
+        }
+    }/* small mobile :320px. */
+
+    @media only screen and (max-width: 479px) {
+        .intro-content h2 {
+            font-size: 5px;
+        }
+
+        .test {
+            color: #5e5c5c;
+            font-weight: 700;
+            font-size: 10px;
+        }
+    }
+    </style>
+        <title>免费VIP播放器</title>
+<body>
+    
+    <section class="intro-section" id="home">
+        <div class="intro-content">
+            <img class="intro-logo" src="../img/logo1.png"/>
+            <h1>请在下方输入正确的VIP视频解析地址</h1>
+           <h2>感谢使用狗KK解析,视频加载中,请稍后...</h2>
+        </div>
+    </section>
+</body>
+</html>
