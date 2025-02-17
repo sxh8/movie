@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>视频解析帮助页面</title>
+<meta name="keywords" content="优酷VIP解析,爱奇艺VIP解析,腾讯VIP解析,乐视VIP解析,芒果VIP解析,全网视频解析,VIP在线解析,视频VIP在线解析,VIP视频在线解析" />
+		<meta name="description" content="VIP视频解析网站是一种在线观看vip视频平台，可让用户免费解析VIP视频，如优酷、爱奇艺、腾讯视频等网站所提供的会员专属影视资源。该网站通过解析会员视频链接，将视频资源转化为可供非会员观看的普通视频链接，让用户可以免费观看高清影视资源。用户只需将需要解析的VIP视频复制到指定区域，即可开始解析并观看。这种服务通常是由第三方网站提供，本站为广大网友提供优酷VIP解析。" />
+		<meta name=viewport content="width=device-width,anicital-scale=1">
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/base64.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+		<!--微博引入关注插件-->
+		<script src="open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" href="css/style.css" />
+		<!--浏览器标签ico-->
+		<link rel="icon" href="img/favicon.png" />
+		<!--书签标签-->
+		<link rel="bookmark" href="/img/logo1.png" />
+		<!--苹果桌面标题-->
+		<meta name="apple-mobile-web-app-title" content="全网VIP视频解析">
+		<!--苹果桌面图标-->
+		<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/img/logo1.png">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@700&display=swap');
+  h1 {
+    color: #fff;
+    text-align: center;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  h2 {
+    color: #fff;
+    text-align: center;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 2em;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #e91e63, 0 0 20px #e91e63, 0 0 25px #e91e63, 0 0 30px #e91e63, 0 0 35px #e91e63;
+    }
+    to {
+      text-shadow: 0 0 10px #fff, 0 0 20px #ff4da6, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6;
+    }
+  }
+  img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+  }
+  img:hover {
+    transform: scale(1.05);
+  }
+  .text-center {
+    text-align: center;
+  }
+   .responsive-image {
+    max-width: 500px; /* 图片最大宽度为容器宽度的100% */
+    height: auto; /* 高度自动保持图片比例 */
+    border-radius: 4px; /* 为图片添加圆角 */
+  }
+</style>
+</head>
+<body>
+<header class="navbar-fixed-top">
+			<div class="container">
+				<nav class="navbar navbar-default">
+					<div class="container-fluid">
+						<!-- 手机自适应样式 -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        <span class="sr-only">导航切换</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+							<!--logo图标-->
+							<a class="navbar-brand logo" href="index.html"></a>
+						</div>
+						<!-- pc导航样式 -->
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav">
+
+<li><a href="https://www.1231888.com" target="_blank"><span class="badge" style="background: #24292e;margin-right:5px;">保存</span>防止失联<span class="sr-only">(current)</span></a></li>
+<li><a href="/jc.html" target="_blank"><span class="badge" style="background: #24292e;margin-right:5px;">教程</span>使用帮助<span class="sr-only">(current)</span></a></li>
+<!--<li><a  href="https://www.1231888.com/" target="_blank" title="领取优惠券购物，不花冤枉钱" style="color: red !important;  font-weight: bold;">懒券券</a></li>
+<li><a href="/zanzhu.html" target="_blank">赞助发电</a></li>		</ul>-->
+							<!--导航 右侧-->
+							<ul class="nav navbar-nav navbar-right">
+								
+								<li class="dropdown">
+									<a href="index.html#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">关于我们<span class="caret"></span></a>
+									<ul class="dropdown-menu">
+								<li><a href="/jc.html" target="_blank" title="使用教程">使用教程</a></li>
+<li role="separator" class="divider"></li>
+<li><a href="mailto:123@1231888.com" target="_blank" title="联系我们">联系我们</a></li>
+<li><a href="https://1231888.com" target="_blank" title="留言反馈">留言反馈</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</header>
+
+
+<!--视频box区域-->
+		<div class="container-fluid video-box">
+			<div class="container ">
+		<div class="wobbt-img">
+		    <!--广告投放区域
+<a href="https://www.1231888.com/
+" target="_blank" rel="noopener"><img src="https://p0.meituan.net/csc/89691af123ee36e84ad589cba41bd0a02654856.jpg" alt="横幅广告图1" height="100px"></a>
+			    -->
+<div class="container">
+  <h1>简单快速入坑</h1>
+  <h2>三步曲，第一步复制你要看的视频地址（不管哪个平台，手机也好电脑也罢）</h2>
+  <img src="https://image.baidu.com/search/down?url=https://ww1.sinaimg.cn/large/9d9812e7ly1hwjv1k5nxej20oq0gstf0.jpg" alt="解析视频地址的步骤">
+  <h2 class="text-center">（电脑复制地址演示）</h2>
+  <img src="https://image.baidu.com/search/down?url=https://ww1.sinaimg.cn/large/9d9812e7ly1hwjv4l14xoj209x0ks426.jpg" alt="解析视频地址的步骤" class="responsive-image">
+  <h2 class="text-center">（手机复制地址演示）</h2>
+  <h2>最后一步</h2>
+  <h2>把复制的视频地址粘贴在解析栏里选择可用线路进行解析观看，手机可放全屏</h2>
+  <img src="https://image.baidu.com/search/down?url=https://ww1.sinaimg.cn/large/9d9812e7ly1hwjx6el8nnj20uh0h9aip.jpg" alt="解析视频地址的步骤">
+</div>
+				
+				    <style>
+ div,ul,li{margin: 0;padding: 0}/*先初始化一下默认样式*/
+.notice {
+    width: 100%;/*单行显示，超出隐藏*/
+    height: 35px;/*固定公告栏显示区域的高度*/
+    padding: 0 30px;
+    background-color: #b3effe;
+    overflow: hidden;
+}
+.notice ul li {
+    list-style: none;
+    line-height: 35px;
+    /*以下为了单行显示，超出隐藏*/
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+    </style>
+<div class="notice">
+    <ul>
+        <li><b>免费提供VIP视频解析服务,视频中的广告不是本站提供，由于技术问题无法屏蔽!请勿轻信和点击广告！</li>
+<li>若视频播放异常，尝试刷新或更换接口即可解决！</li>
+<li>欢迎大家<a href="https://1231888.com" target="_blank" title="打赏站长"><span style="color:red">打赏站长</span></a>以便为您提供更好的服务！您的打赏是我唯一的收入来源，打赏金额将用于服务器续费等日常维护。</b></li>
+    </ul>
+</div>
+
+<script>
+function noticeUp(obj,top,time) {
+    $(obj).animate({
+        marginTop: top
+    }, time, function () {
+        $(this).css({marginTop:"0"}).find(":first").appendTo(this);
+    })
+}
+</script>
+<script src="jquery/3.2.1/jquery.min.js"></script>
+<script src="https://123888.com/noticeUp.js"></script>
+   <script>
+    $(function () {
+        // 调用 公告滚动函数
+        setInterval("noticeUp('.notice ul','-35px',500)", 3000);
+    });
+</script>				
+			<div class="tit-gg">
+						<!--<a href="" target="_blank" >视频解析需耐心等待数秒；如视频未自动播放，请手动点击播放；如视频播放异常，请刷新或切换线路、更换不同平台视频网址播放！如视频播放时一直在加载，请快进数十秒即可。</a>	-->
+					<marquee with="100%" behavior="scroll" onmouseover=this.stop() onmouseout=this.start() scrollamount="4"><a href="index.html" target="_blank" >视频解析需耐心等待数秒；如视频未自动播放，请手动点击播放；如视频播放异常，请刷新或切换线路、更换不同平台视频网址播放！如视频播放时一直在加载，请快进数十秒即可。</a></marquee>
+				
+				</div>
+<div class="guanggaoBox">	<style>
+				/*大盒子里面右边盒子*/
+				.wobbt-img{
+				width: 100%;
+				height: auto;
+				max-height: 100%;
+				min-height: 45px;
+				margin-bottom: 8px;  /*图片盒子上下间隔*/
+				overflow: hidden;  /*设置图片放大不超过图片盒子*/
+				}
+				/*放图片专用盒子*/
+				.wobbt-img img{
+				width: 100%;
+				height: auto;
+				max-height: 100%;
+				min-height: 100%;
+				border-radius: 6px;  /*圆角角度*/
+				transition: all .2s ease .1s;  /*光标放到图片上的放大时间*/
+				}
+				/*对放图片盒子配置样式*/
+				.wobbt-img img:hover{
+				transform: scale(1.03);
+				}
+				.wobbt-img-dapeng img:hover{
+				transform: scale(1.03);
+				}
+				/*设置光标放到图片放大的倍数*/
+				td{
+				 width: 20%;
+				}
+				/*单元格宽度*/
+				
+				@media screen and (max-width: 1000px) {
+				   .wobbt-left{
+				   
+				   float: left;  /*盒子左对齐*/
+				   margin-right: 1%;
+				   }
+				   /*大盒子里面左边盒子*/
+				   .wobbt-right{
+				   
+				   float: left;  /*盒子右对齐*/
+				    
+				    }
+				    }
+				        @media screen and (min-width: 1000px) {
+				            /*解决float的浮动问题，方便，因为直接在父级div的css这里添加如下样式*/
+				            .wobbt-left{
+				            width: 49.5%;
+				            float: left;  /*盒子左对齐*/
+				            margin-right: 1%;
+				            }
+				            /*大盒子里面左边盒子*/
+				            .wobbt-right{
+				            width: 49.5%;
+				            float: left;  /*盒子右对齐*/
+				            }}		
+				</style>
+                        <style>
+ .txtguanggao{
+        width: 100%;
+        overflow: hidden;
+        display: block;
+        box-shadow: 0 1px 2px 0 rgba(0,0,0,.05);
+    }
+    .txtguanggao a{
+        width: calc((100% - 20px) / 4);
+        float: left;
+        border-radius: 2px;
+        line-height: 35.35px;
+        height: 35.35px;
+        text-align: center;
+        font-size: 14px;
+        color: #fff;
+        display: inline-block;
+        background-color: rgb(255, 153, 159);
+        margin: 2.5px;
+            
+        transition-duration: .3s;
+    }
+    .txtguanggao a:nth-child(1) {
+        background-color: #dc3545;
+    }
+    .txtguanggao a:nth-child(2) {
+        background-color: #007bff;
+    }
+    .txtguanggao a:nth-child(3) {
+        background-color: #28a745;
+    }
+    .txtguanggao a:nth-child(4) {
+        background-color: #0099FF;
+    }
+    .txtguanggao a:nth-child(5) {
+        background-color: #28a745;
+    }
+    .txtguanggao a:nth-child(6) {
+        background-color: #ffc107;
+    }
+    .txtguanggao a:nth-child(7) {
+        background-color: #dc3545;
+    }
+    .txtguanggao a:nth-child(8){
+        background-color: #007bff;
+    }
+    .txtguanggao a:hover{
+    background:#FF2805;color:#FFF
+    }
+    @media screen and (max-width: 1000px) {
+    .txtguanggao a{
+       width: calc((100% - 10px) / 2);
+        float: left;
+        border-radius: 2px;
+        line-height: 35.35px;
+        height: 35.35px;
+        text-align: center;
+        font-size: 14px;
+        color: #fff;
+        display: inline-block;
+        background-color: rgb(255, 153, 159);
+        margin: 2.5px;
+        transition-duration: .3s;
+    }
+    }
+        @media screen and (min-width: 1000px) {
+            .txtguanggao a{
+            width: calc((100% - 20px) / 4);
+            }}
+
+</style>
+<!--图片广告-->
+<div class="wobbt">
+<!--<div class="wobbt-img">
+<a href="https://172.lot-ml.com/ProductEn/Index/f7ea2f3de49ee8fc
+" target="_blank" rel="noopener"><img src="https://p0.meituan.net/csc/89691af123ee36e84ad589cba41bd0a02654856.jpg" alt="横幅广告图1" height="100px"></a>
+</div>
+<div class="wobbt-left">
+<div class="wobbt-img">
+<a href="https://172.lot-ml.com/ProductEn/Index/f7ea2f3de49ee8fc" target="_blank" rel="noopener"><img src="https://p0.meituan.net/csc/caf2013563aa4b385eae0631449ea28049932.png" alt="左边广告图1" height="100px"></a>
+</div>
+<div class="wobbt-img">
+<a href="https://172.lot-ml.com/ProductEn/Index/f7ea2f3de49ee8fc" target="_blank" rel="noopener"><img src="https://pic.imgdb.cn/item/64cfac341ddac507cc11cbfd.png" alt="左边广告图2" height="100px"></a>
+</div>-->
+</div>
+<!--左右小图
+<div class="wobbt-right">
+<div class="wobbt-img">
+<a href="https://1231888.com/" target="_blank" rel="noopener"><img src="https://pic.imgdb.cn/item/64cfac341ddac507cc11cbfd.png" alt="右边广告图1" height="100px"></a>
+</div>
+<div class="wobbt-img">
+<a href="https://1231888.com/" target="_blank" rel="noopener"><img src="https://pic.imgdb.cn/item/64cfac341ddac507cc11cbfd.png" alt="右边广告图2" height="100px"></a>
+</div>-->
+</div> 
+<!--文字广告
+<div class="txtguanggao"><a href="index.html" target="_blank" class="dh">文字广告位招租</a><a href="index.html" target="_blank" class="dh">文字广告位招租</a><a href="index.html" target="_blank" class="dh">文字广告位招租</a><a href="index.html#" target="_blank" class="dh">广告投放微信：goukaizhijia</a>
+</div>-->
+</div>
+<script src="pc/fixed-top-tf.js" id="fixedtopid" data="s=9245"></script>
+    </div>
+			</div>
+		</div>
+			
+			
+		
+		
+		<!--平台logo	-->
+		<div class="container-fluid logo-box">
+			<div class="container ">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="title-tit">
+							<h4>现已支持网站</h4>
+							<p>解析已支持26家视频网站，10家音乐网站，更多惊喜请自行探索。</p>
+						</div>
+					</div>
+				</div>
+				<!--第一行-->
+				<div class="row">
+					<div class="col-xs-4 col-sm-2">
+						<div class="logo-lie">
+							<a href="http://www.iqiyi.com/" target="_blank" title="爱奇艺会员">
+								<img class="img-responsive" src="img/logo/iqiyilogo.png" />
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-4 col-sm-2 ">
+						<div class="logo-lie">
+							<a href="http://v.qq.com/" target="_blank" title="腾讯会员视频">
+								<img class="img-responsive" src="img/logo/qqlogo.png" />
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-4 col-sm-2 ">
+						<div class="logo-lie">
+							<a href="http://www.youku.com/" target="_blank" title="优酷会员视频">
+								<img class="img-responsive" src="img/logo/youkulogo.png" />
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-4 col-sm-2 ">
+						<div class="logo-lie">
+							<a href="http://www.mgtv.com/" target="_blank" title="芒果会员视频">
+								<img class="img-responsive" src="img/logo/hunantvlogo.png" />
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-4 col-sm-2">
+						<div class="logo-lie">
+							<a href="http://www.le.com/" target="_blank" title="乐视会员中心">
+								<img class="img-responsive" src="img/logo/letvlogo.png" />
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-4 col-sm-2">
+						<div class="logo-lie">
+							<a href="http://www.tudou.com" target="_blank" title="土豆会员中心">
+								<img class="img-responsive" src="img/logo/tudoulogo.png" />
+							</a>
+						</div>
+					</div>
+				</div>
+				<!--第一行结束-->
+				<!--第二行开始-->
+				<div class="row">
+					<div class="col-xs-4 col-sm-2">
+						<div class="logo-lie">
+							<a href="http://www.baofeng.com/" target="_blank" title="暴风会员">
+								<img class="img-responsive" src="img/logo/baofeng.png" />
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-4 col-sm-2 ">
+						<div class="logo-lie">
+							<a href="http://vip.1905.com/" target="_blank" title="1905电影网视频">
+								<img class="img-responsive" src="img/logo/1905logo.png" />
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-4 col-sm-2 ">
+						<div class="logo-lie">
+							<a href="http://www.kankan.com/" target="_blank" title="天天看看">
+								<img class="img-responsive" src="img/logo/kankan.png" />
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-4 col-sm-2 ">
+						<div class="logo-lie">
+							<a href="http://www.pptv.com/" target="_blank" title="PPTV聚力">
+								<img class="img-responsive" src="img/logo/pptv.png" />
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-4 col-sm-2">
+						<div class="logo-lie">
+							<a href="http://www.yinyuetai.com/" target="_blank" title="音悦台MV">
+								<img class="img-responsive" src="img/logo/yinyuetailogo.png" />
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-4 col-sm-2">
+						<div class="logo-lie">
+							<a href="http://www.fun.tv/" target="_blank" title="风行视频">
+								<img class="img-responsive" src="img/logo/fengxing.png" />
+							</a>
+						</div>
+					</div>
+				</div>
+				<!--第二行结束-->
+				<!--第三行开始-->
+				<div class="row">
+					<div class="col-xs-4 col-sm-2 ">
+						<div class="logo-lie">
+							<a href="http://www.wasu.cn/" target="_blank" title="WASU华数视频">
+								<img class="img-responsive" src="img/logo/wasulogo.png" />
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-4 col-sm-2 ">
+						<div class="logo-lie">
+							<a href="http://video.sina.com.cn/" target="_blank" title="新浪视频">
+								<img class="img-responsive" src="img/logo/sinalogo.png" />
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-4 col-sm-2">
+						<div class="logo-lie">
+							<a href="https://film.sohu.com/" target="_blank" title="搜狐视频">
+								<img class="img-responsive" src="img/logo/sohulogo.png" />
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-4 col-sm-2 ">
+						<div class="logo-lie">
+							<a href="http://tv.cctv.com/" target="_blank" title="央视网">
+								<img class="img-responsive" src="img/logo/cntvlogo.png" />
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-4 col-sm-2 ">
+						<div class="logo-lie">
+							<a href="http://www.acfun.cn/" target="_blank" title="Ac弹幕网">
+								<img class="img-responsive" src="img/logo/acfun.png" />
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-4 col-sm-2">
+						<div class="logo-lie">
+							<a href="http://www.bilibili.com/" target="_blank" title="哔哩哔哩">
+								<img class="img-responsive" src="img/logo/bilibili.png" />
+							</a>
+						</div>
+					</div>
+				</div>
+				<!--第三行结束-->
+				<!---->
+			</div>
+		</div>
+	
+		
+	
+		
+		
+		<div class="cy-box">
+			<div class="container">
+			
+			</div></div>
+			<footer class="footer">
+	<div class="branding">
+		<!--友情链接-->
+			<div class="branding_link">
+				<section class="container">
+					<a href="index.html" target="_blank"style="color:#888;margin:0px;">vip解析官网</a>
+<a href="index.html" target="_blank"style="color:#888;margin:0px;">vip视频在线解析</a>
+<a href="index.html" target="_blank"style="color:#888;margin:0px;">万能视频在线解析</a>
+<a href="index.html" target="_blank"style="color:#888;margin:0px;">全民vip视频解析</a>
+<a href="index.html" target="_blank"style="color:#888;margin:0px;">高清vip视频在线解析</a>
+<a href="index.html" target="_blank"style="color:#888;margin:0px;">万能视频解析工具</a>
+<a href="index.html" target="_blank"style="color:#888;margin:0px;">吾爱vip视频解析</a>
+<a href="index.html" target="_blank"style="color:#888;margin:0px;">无广告vip视频在线解析</a>
+<a href="index.html" target="_blank"style="color:#888;margin:0px;">手机万能视频解析</a>
+<a href="index.html" target="_blank"style="color:#888;margin:0px;">高清电影视频解析</a>
+<a href="index.html" target="_blank"style="color:#888;margin:0px;">高清vip视频在线解析</a>
+<a href="index.html" target="_blank"style="color:#888;margin:0px;">电影视频解析工具</a>				</section>
+			</div>
+		<!--友情链接结束-->
+		<!--居中部分-->
+		<hr style="display: block;height: 1px;margin-bottom: 10px;background-color: #4f4f4f;    margin-top: 0px;margin-bottom: 20px;border: 0;"/>
+		<div class="container footer-tit">
+			<!--	<div class="counter">
+				『您是本站第<img border="0" src="http://cc.amazingcounters.com/counter.php?i=3217952&c=9654169" alt="AmazingCounters.com">位访客』
+			</div>	-->	
+			<p>本站提供的最新电影和电视剧资源均系收集于各大视频网站,本站只提供web页面服务,并不提供影片资源存储,也不参与录制、上传。<br/>若本站收录的节目无意侵犯了贵司版权，请联系我们,我们会及时处理和回复,谢谢。</p>
+			
+			<!--<p>管理员邮箱：410753470@qq.com-->	&nbsp; <a class="foot-tt" href="http://www.miitbeian.gov.cn" ><img style="vertical-align: middle;" src="img/beian.png"/>皖ICP备2022000334号-2</a>&nbsp; </p>
+			<p>Copyright&nbsp;&copy;&nbsp;2024&nbsp;	<a href="index.html" target="_blank" style="color:#888;">狗凯之家视频解析</a>版权所有</p>
+			
+			  <a target="_blank" href="https://www.1231888.com" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-thumbs-up"></span>不会用点我</a>
+  <a target="_blank" href="index.html" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-globe"></span>更多接口后续更新</a> 
+ <button type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-user"></span>  <a href="https://www.1231888.com">赞助支持</a>
+ </button> 
+			
+			
+			<p class="toot-tto">
+</p>
+			<!--统计展示-->
+
+
+		</div>
+	</div>
+
+ </footer>
+
+<!--侧滑-->
+<section class="ch">
+	<div class="rollbar-item" title="返回首页"><a class="rollbar-top"  href="index.html#top"></a></div>
+</section>
+<section class="ch1">
+	<!--<a href="https://1231888.com/" target="_blank" title="领券购物更优惠"><img src="img/gou.png"/></a>-->
+</section>
+
+<script type="text/javascript">
+		//判断F12审查元素
+function fuckyou() {
+	window.close(); //关闭当前窗口(防抽)
+	window.location = "about:blank"; //将当前窗口跳转置空白页
+}
+
+function ck() {
+	console.profile();
+	console.profileEnd();
+	//我们判断一下profiles里面有没有东西，如果有，肯定有人按F12了，没错！！
+	if(console.clear) {
+		console.clear()
+	};
+	if(typeof console.profiles == "object") {
+		return console.profiles.length > 0;
+	}
+}
+
+function hehe() {
+	if((window.console && (console.firebug || console.table && /firebug/i.test(console.table()))) || (typeof opera == 'object' && typeof opera.postError == 'function' && console.profile.length > 0)) {
+		fuckyou();
+	}
+	if(typeof console.profiles == "object" && console.profiles.length > 0) {
+		fuckyou();
+	}
+}
+hehe();
+window.onresize = function() {
+	if((window.outerHeight - window.innerHeight) > 200)
+		//判断当前窗口内页高度和窗口高度，如果差值大于200，那么呵呵
+		fuckyou();
+}
+</script>
+-->			<script type="text/javascript" src="js/tv-beipy.js" /></script>
+					<script type="text/javascript" src="vip_js/ckplayer.js" /></script>
+</body>
+</html>
